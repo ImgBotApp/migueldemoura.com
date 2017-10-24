@@ -40,13 +40,13 @@
             {% assign page_title = page.title | cgi_escape | truncate: 110 %}
             {% capture twitter-share-text %}{{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
             <a href="https://twitter.com/home?status={{ twitter-share-text }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
-                <svg viewBox="0 0 512 512"><use href="{% asset_path twitter.svg %}#icon-twitter" xlink:href="{% asset_path twitter.svg %}#icon-twitter"></use></svg>
+                <svg viewBox="0 0 512 512"><use href="{% asset_path icons.svg %}#icon-twitter" xlink:href="{% asset_path icons.svg %}#icon-twitter"></use></svg>
             </a>
             <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
-                <svg viewBox="0 0 512 512"><use href="{% asset_path linkedin.svg %}#icon-linkedin" xlink:href="{% asset_path linkedin.svg %}#icon-linkedin"></use></svg>
+                <svg viewBox="0 0 512 512"><use href="{% asset_path icons.svg %}#icon-linkedin" xlink:href="{% asset_path icons.svg %}#icon-linkedin"></use></svg>
             </a>
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
-                <svg viewBox="0 0 512 512"><use href="{% asset_path facebook.svg %}#icon-facebook" xlink:href="{% asset_path facebook.svg %}#icon-facebook"></use></svg>
+                <svg viewBox="0 0 512 512"><use href="{% asset_path icons.svg %}#icon-facebook" xlink:href="{% asset_path icons.svg %}#icon-facebook"></use></svg>
             </a>
           </div>
 
