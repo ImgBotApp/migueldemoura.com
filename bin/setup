@@ -2,7 +2,7 @@
 
 set -e
 
-cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
 
 # Set up Ruby dependencies via Bundler
 gem install bundler --conservative
