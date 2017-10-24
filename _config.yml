@@ -1,0 +1,61 @@
+# Mandatory settings
+
+name: Miguel de Moura
+paginate: 5
+url: https://migueldemoura.com
+blog_theme: light
+
+# Optional settings
+
+about_enabled: true
+discus_identifier: migueldemoura
+ga_analytics:
+rss_enabled: true
+scrollappear_enabled: true
+social:
+  github: migueldemoura
+  linkedin: migueldemoura
+  email: me@migueldemoura.com
+
+# Important settings (change at own risk)
+
+assets:
+  features:
+    automatic_img_size: false
+  sources:
+    - _assets/fonts
+    - _assets/icons
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - node_modules
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
+include:
+  - _headers
+exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - vendor/
+  - yarn.lock
+plugins:
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+paginate_path: /posts/page/:num/
+permalink: posts/:slug

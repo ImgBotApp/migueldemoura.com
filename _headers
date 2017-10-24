@@ -1,6 +1,6 @@
 /*
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'none'; script-src 'self' d33wubrfki0l68.cloudfront.net; style-src 'self' d33wubrfki0l68.cloudfront.net; img-src 'self' d33wubrfki0l68.cloudfront.net; font-src 'self' d33wubrfki0l68.cloudfront.net; frame-src 'none'; object-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'self'; require-sri-for script style
+  Content-Security-Policy: default-src 'none'; script-src 'self' d33wubrfki0l68.cloudfront.net migueldemoura.disqus.com disquscdn.com; style-src 'self' d33wubrfki0l68.cloudfront.net c.disquscdn.com; img-src 'self' d33wubrfki0l68.cloudfront.net; font-src 'self' d33wubrfki0l68.cloudfront.net; frame-src disqus.com; object-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'self'; require-sri-for script style
   Referrer-Policy: no-referrer
   Expect-CT: enforce

@@ -1,0 +1,7 @@
+!.keep
+*.sass-cache
+/_drafts/
+/_site/
+/.asset-cache/
+/node_modules/
+Gemfile.lock

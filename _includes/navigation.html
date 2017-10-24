@@ -1,0 +1,40 @@
+<nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <ul class="header-links">
+    {% if site.about_enabled == true %}
+      <li>
+        <a href="{{ 'about' | relative_url }}" title="About me">
+          <svg class="icon-about"><use href="{% asset_path about.svg %}#icon-about" xlink:href="{% asset_path about.svg %}#icon-about"></use></svg>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.github %}
+      <li>
+        <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg class="icon-github"><use href="{% asset_path github.svg %}#icon-github" xlink:href="{% asset_path github.svg %}#icon-github"></use></svg>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.linkedin %}
+      <li>
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+          <svg class="icon-linkedin"><use href="{% asset_path linkedin.svg %}#icon-linkedin" xlink:href="{% asset_path linkedin.svg %}#icon-linkedin"></use></svg>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}" title="Email">
+          <svg class="icon-email"><use href="{% asset_path email.svg %}#icon-email" xlink:href="{% asset_path email.svg %}#icon-email"></use></svg>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.rss_enabled == true %}
+      <li>
+        <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg class="icon-rss"><use href="{% asset_path rss.svg %}#icon-rss" xlink:href="{% asset_path rss.svg %}#icon-rss"></use></svg>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

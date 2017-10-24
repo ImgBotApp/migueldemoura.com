@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+
+# Set up Ruby dependencies via Bundler
+gem install bundler --conservative
+bundle check
+bundle update
+
+# Set up JS dependencies via Yarn
+yarn install
