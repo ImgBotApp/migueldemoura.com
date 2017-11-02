@@ -4,10 +4,8 @@ set -e
 
 cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
 
-# Set up Ruby dependencies via Bundler
-gem install bundler --conservative
-bundle check
-bundle update
+# Bundler
+bundle install
 
-# Set up JS dependencies via Yarn
+# Yarn
 yarn install
