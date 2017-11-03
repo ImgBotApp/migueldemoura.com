@@ -1,40 +1,30 @@
-<nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
-  <ul class="header-links">
-    {% if site.about_enabled == true %}
-      <li>
-        <a href="{{ 'about' | relative_url }}" title="About me">
-          <svg class="icon-about"><use href="{% asset_path icons.svg %}#icon-about" xlink:href="{% asset_path icons.svg %}#icon-about"></use></svg>
-        </a>
-      </li>
-    {% endif %}
-    {% if site.social.github %}
-      <li>
-        <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
-          <svg class="icon-github"><use href="{% asset_path icons.svg %}#icon-github" xlink:href="{% asset_path icons.svg %}#icon-github"></use></svg>
-        </a>
-      </li>
-    {% endif %}
-    {% if site.social.linkedin %}
-      <li>
-        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
-          <svg class="icon-linkedin"><use href="{% asset_path icons.svg %}#icon-linkedin" xlink:href="{% asset_path icons.svg %}#icon-linkedin"></use></svg>
-        </a>
-      </li>
-    {% endif %}
-    {% if site.social.email %}
-      <li>
-        <a href="mailto:{{ site.social.email }}" title="Email">
-          <svg class="icon-email"><use href="{% asset_path icons.svg %}#icon-email" xlink:href="{% asset_path icons.svg %}#icon-email"></use></svg>
-        </a>
-      </li>
-    {% endif %}
-    {% if site.rss_enabled == true %}
-      <li>
-        <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
-          <svg class="icon-rss"><use href="{% asset_path icons.svg %}#icon-rss" xlink:href="{% asset_path icons.svg %}#icon-rss"></use></svg>
-        </a>
-      </li>
-    {% endif %}
-  </ul>
+<nav class="header-nav">
+    <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+    <ul class="header-links">
+        <li>
+            <a href="{{ 'about' | relative_url }}" title="About">
+                {% include svg-icon.html icon="about" %}
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
+                {% include svg-icon.html icon="github" %}
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+                {% include svg-icon.html icon="linkedin" %}
+            </a>
+        </li>
+        <li>
+            <a href="mailto:{{ site.social.email }}" title="Email">
+                {% include svg-icon.html icon="email" %}
+            </a>
+        </li>
+        <li>
+            <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
+                {% include svg-icon.html icon="rss" %}
+            </a>
+        </li>
+    </ul>
 </nav>

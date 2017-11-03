@@ -11,14 +11,7 @@ sitemap: false
   <title>{{ site.name }} | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include stylesheet.html path="fonts" %}
-
-  {% if site.blog_theme == "light" %}
-    {% stylesheet notfound-light %}
-    {% include stylesheet.html path="notfound-light" %}
-  {% else %}
-    {% include stylesheet.html path="notfound-dark" %}
-  {% endif %}
+  {% include stylesheet.html path="main.css" %}
 </head>
 <body>
   <main class="notfound-wrapper">
