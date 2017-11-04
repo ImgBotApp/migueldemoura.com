@@ -21,7 +21,3 @@ throttle-debounce-fn@^1.0.1:
   resolved "https://registry.yarnpkg.com/throttle-debounce-fn/-/throttle-debounce-fn-1.0.1.tgz#baa530496a5fb567ab7bb373ea0778b9db962492"
   dependencies:
     jquery ">=1.4.0"
-
-turbolinks@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.0.3.tgz#c8ce128cfc9be1d691a1e41ffa858a5a5ee86a02"

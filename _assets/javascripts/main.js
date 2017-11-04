@@ -1,10 +1,9 @@
 //= require jquery
-//= require turbolinks/dist/turbolinks.js
 //= require throttle-debounce-fn/dist/throttle-debounce-fn.js
 //= require fluidbox
 //= require svgpolyfill.js
 
-$(document).on('turbolinks:load', function (event) {
+$(function() {
     // Fluidbox
     $('.fluidbox-trigger').fluidbox();
 
