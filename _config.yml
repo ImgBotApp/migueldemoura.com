@@ -7,14 +7,15 @@ social:
   email: me@migueldemoura.com
 
 assets:
-  features:
-    automatic_img_size: true
   sources:
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - node_modules
+  compress:
+    css: true
+    js: true
 collections:
   posts_tags:
     output: true
@@ -33,11 +34,11 @@ exclude:
   - node_modules/
   - Gemfile
   - Gemfile.lock
-  - package.json
+  - gulpfile.js
   - LICENSE.md
+  - package.json
   - README.md
   - yarn.lock
-  - staticman.yml
 plugins:
   - jekyll-assets
   - jekyll-paginate
