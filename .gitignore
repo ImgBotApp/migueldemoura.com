@@ -2,6 +2,6 @@
 *.sass-cache
 /_drafts/
 /_site/
-/.asset-cache/
+/.jekyll-cache/
 /node_modules/
 Gemfile.lock

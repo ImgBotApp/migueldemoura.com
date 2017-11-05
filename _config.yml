@@ -16,6 +16,10 @@ assets:
   compress:
     css: true
     js: true
+  img:
+    optim: {}
+  features:
+    automatic_img_size: false
 collections:
   posts_tags:
     output: true
