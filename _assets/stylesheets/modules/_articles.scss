@@ -118,7 +118,7 @@
   display: block;
   margin: 100px 0;
   font-style: italic;
-  color: $gray-light;
+  color: $gray;
   text-align: center;
 }
 
@@ -194,7 +194,7 @@
     svg {
       vertical-align: middle;
       transition: fill $base-transition-speed linear;
-      fill: $gray-light;
+      fill: $gray;
       width: 20px;
       height: 20px;
     }
@@ -207,7 +207,7 @@
 // Responsive
 // =============================================================================
 
-@include breakpoint(small) {
+@include breakpoint(extra-small) {
   .article-list-footer {
     display: block;
   }
