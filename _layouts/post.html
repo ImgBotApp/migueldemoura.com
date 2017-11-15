@@ -1,56 +1,36 @@
-<!doctype html>
-<html lang="en">
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
-    <main>
-        <div class="grid grid-centered">
-            <div class="grid-cell">
-                {% include navigation.html %}
-                <article class="article">
-                    <header class="article-header">
-                        <h1>{{ page.title }}</h1>
-                        <p>{{ page.description }}</p>
-                        <div class="article-list-footer">
-                            <span class="article-list-date">
-                                {{ page.date | date: "%B %-d, %Y" }}
-                            </span>
-                            <span class="article-list-divider">-</span>
-                            <span class="article-list-minutes">
-                                {% capture words %} {{ page.content | number_of_words }} {% endcapture %} {% unless words contains "-" %} {{ words | plus:
-                                250 | divided_by: 250 | append: " minute read" }} {% endunless %}
-                            </span>
-                            <span class="article-list-divider">-</span>
-                            <div class="article-list-tags">
-                                {% for tag in page.tags %}
-                                <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag | capitalize }}</a>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </header>
-                    <div class="article-content">
-                        {{ content }}
-                    </div>
-                    <div class="article-share">
-                        {% assign page_title = page.title | cgi_escape | truncate: 110 %} {% capture twitter-share-text %}{{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
-                        <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
-                            {% include svg-icon.html icon="twitter" %}
-                        </a>
-                        <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}" title="Share on LinkedIn" rel="noreferrer noopener"
-                            target="_blank">
-                            {% include svg-icon.html icon="linkedin" %}
-                        </a>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener"
-                            target="_blank">
-                            {% include svg-icon.html icon="facebook" %}
-                        </a>
-                    </div>
-                    <div class="article-comments"></div>
-                </article>
-                {% include footer.html %}
+<article class="article">
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.description }}</p>
+        <div class="article-list-footer">
+            <span class="article-list-date">
+                {{ page.date | date: "%B %-d, %Y" }}
+            </span>
+            <span class="article-list-divider">-</span>
+            <div class="article-list-tags">
+                {% for tag in page.tags %}
+                <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag | capitalize }}</a>
+                {% endfor %}
             </div>
         </div>
-    </main>
-    {% include javascripts.html %}
-</body>
-</html>
+    </header>
+    <div class="article-content">
+        {{ content }}
+    </div>
+    <div class="article-share">
+        {% assign page_title = page.title | cgi_escape | truncate: 110 %} {% capture twitter-share-text %}{{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
+        <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+            {% include svg-icon.html icon="twitter" %}
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
+            {% include svg-icon.html icon="linkedin" %}
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+            {% include svg-icon.html icon="facebook" %}
+        </a>
+    </div>
+</article>
