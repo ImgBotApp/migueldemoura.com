@@ -1,0 +1,11 @@
+<a href="{% asset '{{ include.path }}' @path %}" data-rjs="{% asset '{{ include.path }}' @path %}" class="fluidbox-trigger">
+    {% asset '{{ include.path }}'
+        srcset='magick:format=image/webp magick:resize=610 media="(min-width: 650px)"'
+        srcset='magick:resize=610 media="(min-width: 650px)"'
+        srcset='magick:format=image/webp magick:resize=440 media="(min-width: 480px)"'
+        srcset='magick:resize=440 media="(min-width: 480px)"'
+        srcset='magick:format=image/webp magick:resize=200 media="(min-width: 0)"'
+        srcset='magick:resize=200 media="(min-width: 0)"'
+        alt='{{ include.alt }}'
+    %}
+</a>
