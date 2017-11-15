@@ -4,8 +4,5 @@ set -e
 
 cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
 
-# Bundler
 bundle install
-
-# Yarn
 yarn install
