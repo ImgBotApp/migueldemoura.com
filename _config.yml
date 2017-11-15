@@ -21,6 +21,9 @@ assets:
   features:
     automatic_img_size: false
 collections:
+  pages:
+    output: true
+    permalink: /:path
   posts_tags:
     output: true
     permalink: /tag/:slug/
