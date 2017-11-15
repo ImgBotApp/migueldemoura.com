@@ -1,6 +1,3 @@
-exclude:
-  - "vendor/*"
-
 linters:
   StringQuotes:
     enabled: true
