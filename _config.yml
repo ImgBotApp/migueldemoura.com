@@ -16,7 +16,18 @@ assets:
     css: true
     js: true
   img:
-    optim: {}
+    optim:
+        default:
+          verbose: true
+        zero_png:
+        advpng:
+        gifsicle:
+        jpegoptim:
+        optipng:
+          level: 7
+        pngout:
+          strategy: 0
+        svgo:
   features:
     automatic_img_size: false
 collections:
