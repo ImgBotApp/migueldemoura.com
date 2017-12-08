@@ -9,7 +9,7 @@ gem 'sass'
 gem 'uglifier'
 
 group :jekyll_plugins do
-    gem 'jekyll-assets', :git => 'https://github.com/jekyll/jekyll-assets.git'
+    gem 'jekyll-assets'
     gem 'jekyll-paginate'
     gem 'jekyll-sitemap'
     gem 'jemoji'
