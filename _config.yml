@@ -39,7 +39,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - gulpfile.js
-  - LICENSE.md
+  - LICENSE-CC-BY-SA-4.0.md
+  - LICENSE-MIT.md
   - package.json
   - README.md
   - yarn.lock
