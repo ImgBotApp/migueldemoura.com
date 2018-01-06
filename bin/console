@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
+
+case "$1" in
+    "setup")
+        bundle install
+        yarn install ;;
+    "serve") bundle exec jekyll serve ;;
+    "clean")
+        rm yarn.lock
+        rm Gemfile.lock
+        rm -rf .jekyll-cache/
+        rm -rf node_modules/
+        rm -rf _site/ ;;
+    *) exit -1 ;;
+esac

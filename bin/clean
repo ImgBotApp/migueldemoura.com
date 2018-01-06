@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
-
-rm yarn.lock
-rm Gemfile.lock
-rm -rf .jekyll-cache/
-rm -rf node_modules/
-rm -rf _site/
