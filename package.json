@@ -3,9 +3,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery": "^3.2.1",
-    "throttle-debounce-fn": "^1.0.1",
-    "normalize-scss": "^7.0.0",
-    "fluidbox": "^2.0.5"
+    "fluidbox": "^2.0.5",
+    "jquery": "^3.3.1",
+    "normalize-scss": "^7.0.1",
+    "throttle-debounce-fn": "^1.0.1"
   }
 }
