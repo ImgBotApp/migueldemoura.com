@@ -6,7 +6,8 @@ case "$1" in
     "setup")
         bundle install
         yarn install ;;
-    "serve") bundle exec jekyll serve ;;
+    "serve")
+        bundle exec jekyll serve ;;
     "clean")
         rm yarn.lock
         rm Gemfile.lock
