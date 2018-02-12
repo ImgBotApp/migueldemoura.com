@@ -1,3 +1,8 @@
 <a href="{% asset '{{ include.path }}' @path %}" data-rjs="{% asset '{{ include.path }}' @path %}" class="fluidbox-trigger">
-    {% asset '{{ include.path }}' alt='{{ include.alt }}' %}
+    {% asset '{{ include.path }}'
+        srcset:width=610
+        srcset:width=440
+        srcset:width=200
+        alt='{{ include.alt }}'
+    %}
 </a>
