@@ -9,10 +9,7 @@ case "$1" in
     "serve")
         bundle exec jekyll serve ;;
     "clean")
-        rm -f yarn.lock
-        rm -f Gemfile.lock
-        rm -rf .jekyll-cache/
-        rm -rf node_modules/
-        rm -rf _site/ ;;
+        rm -f yarn.lock Gemfile.lock
+        rm -rf .jekyll-cache/ node_modules/ _site/ ;;
     *) exit -1 ;;
 esac
