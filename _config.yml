@@ -46,3 +46,12 @@ exclude:
   - yarn.lock
 paginate: 5
 permalink: posts/:slug/
+
+webrick:
+  headers:
+    X-Content-Type-Options: "nosniff"
+    X-Frame-Options: "DENY"
+    X-XSS-Protection: "1; mode=block"
+    Content-Security-Policy: "default-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self'; require-sri-for script style"
+    Referrer-Policy: "no-referrer"
+    Expect-CT: "enforce"
