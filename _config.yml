@@ -12,9 +12,8 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - node_modules
-  compress:
-    css: true
-    js: true
+  gzip: true
+  compression: true
   features:
     automatic_img_size: false
 collections:
