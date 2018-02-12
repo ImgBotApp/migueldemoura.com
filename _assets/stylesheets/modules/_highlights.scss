@@ -3,10 +3,11 @@
 // =============================================================================
 
 .highlight {
-  padding: 50px;
+  padding: 35px 25px;
   margin: 0;
   margin: 30px 0;
   overflow: auto;
+  font-size: 14px;
   font-weight: 400;
   background: lighten($gray-lightest, 6);
   border-radius: $base-border-radius;
@@ -24,16 +25,6 @@
   background: lighten($gray-lightest, 6);
   border: 1px solid $base-border-color;
   border-radius: 1px;
-}
-
-// Responsive
-// =============================================================================
-
-@include breakpoint(small) {
-  .highlight {
-    padding: 50px 25px;
-    font-size: 14px;
-  }
 }
 
 // Highlighting types
