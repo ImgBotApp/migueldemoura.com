@@ -78,7 +78,6 @@
   p {
     display: block;
     margin: 12px 0 10px;
-    font-size: 15px;
     color: $article-header-description-color;
   }
 }
@@ -169,17 +168,10 @@
   blockquote p {
     margin-bottom: 0;
   }
-  img.emoji {
-    display: inline-block;
-    margin-top: -4px;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
 }
 
 .article-share {
   display: block;
-  margin-top: -4px;
   a {
     display: inline-block;
     margin-right: 12px;
