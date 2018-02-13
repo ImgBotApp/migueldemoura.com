@@ -23,6 +23,6 @@
       @content;
     }
   } @else {
-    @warn "The parameter #{$val} is not valid";
+    @warn 'The parameter #{$val} is not valid';
   }
 }
