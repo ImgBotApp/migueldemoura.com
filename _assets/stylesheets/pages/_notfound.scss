@@ -2,7 +2,7 @@
 // NotFound
 // =============================================================================
 
-.notfound-wrapper {
+.notfound {
   position: fixed;
   top: 0;
   right: 0;
@@ -11,27 +11,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.notfound-content {
-  flex: auto;
-  max-width: 250px;
-  text-align: center;
-  h1 {
-    display: inline-block;
-    margin-bottom: 4px;
-    font-family: $serif;
-    font-size: 36px;
-    a {
-      color: $gray-darkest;
-      text-decoration: none;
-    }
-  }
-  p {
-    display: block;
+  div {
+    flex: auto;
+    max-width: 250px;
     text-align: center;
     a {
       color: $gray-darkest;
+    }
+    h1 {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-family: $serif;
+      font-size: 36px;
+      a {
+        text-decoration: none;
+      }
+    }
+    p {
+      display: block;
+      text-align: center;
     }
   }
 }
