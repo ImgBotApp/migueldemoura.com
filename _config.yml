@@ -29,7 +29,7 @@ defaults:
       path: ""
       type: posts_tags
     values:
-      layout: articles_by_tag
+      layout: articles-tag
 include:
   - _headers
 exclude:
