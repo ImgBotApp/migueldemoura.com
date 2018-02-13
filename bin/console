@@ -5,11 +5,11 @@ cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"/../
 case "$1" in
     "setup")
         bundle install
-        yarn install ;;
+        npm install ;;
     "serve")
         bundle exec jekyll serve ;;
     "clean")
-        rm -f yarn.lock Gemfile.lock
+        rm -f package-lock.json Gemfile.lock
         rm -rf .jekyll-cache/ node_modules/ _site/ ;;
     *) exit -1 ;;
 esac
