@@ -2,6 +2,116 @@
 // Articles
 // =============================================================================
 
+// Article page
+// =============================================================================
+
+.article-header {
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $base-border-color;
+  p {
+    display: block;
+    margin: 12px 0 10px;
+    font-size: $base-font-size;
+    color: $article-header-description-color;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.article-list-item {
+  h5 {
+    position: relative;
+    display: block;
+    padding-right: 25px;
+    color: $article-header-title-color;
+    border-bottom: 1px solid transparent;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin: -2px 8px 0 8px;
+      fill: $article-header-title-color;
+      opacity: 0;
+      transition: opacity $base-transition-speed linear;
+    }
+    &:hover svg {
+      opacity: 1;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    display: block;
+    margin: 12px 0 10px;
+    color: $article-header-description-color;
+  }
+}
+
+.article-share {
+  display: block;
+  a {
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+    svg {
+      fill: $gray;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover svg {
+      fill: $gray-dark;
+    }
+  }
+}
+
+.article-content {
+  display: block;
+  p,
+  ul,
+  ol,
+  img,
+  blockquote {
+    display: block;
+    margin-bottom: 30px;
+  }
+  h2,
+  h3,
+  h4 {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $sans-serif;
+    color: $article-post-titles-color;
+  }
+  blockquote p {
+    margin-bottom: 0;
+  }
+}
+
+.article-list-footer {
+  display: block;
+  span,
+  a {
+    display: inline-block;
+    font-size: 12px;
+    color: $article-footer-color;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  a {
+    margin-right: 7.5px;
+    color: $article-footer-link-color;
+    &:hover {
+      color: $article-footer-link-color-hover;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .article {
   display: block;
   margin: 100px 0;
@@ -37,7 +147,6 @@
         svg {
           width: 16px;
           height: 16px;
-          vertical-align: middle;
           margin: -2px 8px 0 8px;
           fill: $gray;
         }
@@ -48,58 +157,6 @@
           color: $article-paginator-color-hover;
         }
       }
-    }
-  }
-}
-
-.article-list-item {
-  h5 {
-    position: relative;
-    display: block;
-    padding-right: 25px;
-    color: $article-header-title-color;
-    border-bottom: 1px solid transparent;
-    svg {
-      width: 16px;
-      height: 16px;
-      vertical-align: middle;
-      margin: -2px 8px 0 8px;
-      fill: $article-header-title-color;
-      opacity: 0;
-      transition: opacity $base-transition-speed linear;
-    }
-    &:hover svg {
-      opacity: 1;
-    }
-  }
-  a {
-    text-decoration: none;
-  }
-  p {
-    display: block;
-    margin: 12px 0 10px;
-    color: $article-header-description-color;
-  }
-}
-
-.article-list-footer {
-  display: block;
-  span,
-  a {
-    display: inline-block;
-    font-size: 12px;
-    color: $article-footer-color;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
-  a {
-    margin-right: 7.5px;
-    color: $article-footer-link-color;
-    &:hover {
-      color: $article-footer-link-color-hover;
-    }
-    &:last-child {
-      margin-right: 0;
     }
   }
 }
@@ -126,67 +183,6 @@
 
 .article-pagination-right {
   float: right;
-}
-
-// Article page
-// =============================================================================
-
-.article-header {
-  display: block;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid $base-border-color;
-  p {
-    display: block;
-    margin: 12px 0 10px;
-    font-size: $base-font-size;
-    color: $article-header-description-color;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-.article-content {
-  display: block;
-  p,
-  ul,
-  ol,
-  img,
-  blockquote {
-    display: block;
-    margin-bottom: 30px;
-  }
-  h2,
-  h3,
-  h4 {
-    display: block;
-    margin-bottom: 10px;
-    font-family: $sans-serif;
-    color: $article-post-titles-color;
-  }
-  blockquote p {
-    margin-bottom: 0;
-  }
-}
-
-.article-share {
-  display: block;
-  a {
-    display: inline-block;
-    margin-right: 12px;
-    vertical-align: middle;
-    svg {
-      vertical-align: middle;
-      transition: fill $base-transition-speed linear;
-      fill: $gray;
-      width: 20px;
-      height: 20px;
-    }
-    &:hover svg {
-      fill: $gray-dark;
-    }
-  }
 }
 
 // Responsive

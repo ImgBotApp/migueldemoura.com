@@ -7,5 +7,10 @@
     "jquery": "^3.3.1",
     "normalize-scss": "^7.0.1",
     "throttle-debounce-fn": "^1.0.1"
+  },
+  "devDependencies": {
+    "stylelint": "^8.4.0",
+    "stylelint-scss": "^2.3.0",
+    "stylelint-config-recommended": "^2.0.1"
   }
 }
