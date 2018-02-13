@@ -20,7 +20,7 @@
 .header-links {
   float: right;
   padding: 0;
-  margin: 15px 0 0;
+  margin: 20px 0 0;
   list-style: none;
   li {
     display: inline-block;
@@ -51,6 +51,7 @@
   .header-links {
     display: block;
     float: none;
+    margin: 15px 0 0;
     text-align: center;
     li {
       margin: 0 10px;
