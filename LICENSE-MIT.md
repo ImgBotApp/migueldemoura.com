@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Miguel de Moura
+Copyright (c) 2017-2018 Miguel de Moura
 Copyright (c) 2017 Nielsen Ramon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
