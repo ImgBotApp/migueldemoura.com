@@ -1,7 +1,7 @@
 !.keep
-*.sass-cache
 /_drafts/
 /_site/
 /.jekyll-cache/
 /node_modules/
 Gemfile.lock
+package-lock.json
