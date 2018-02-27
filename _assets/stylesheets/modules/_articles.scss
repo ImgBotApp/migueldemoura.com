@@ -85,7 +85,8 @@
     font-family: $sans-serif;
     color: $article-post-titles-color;
   }
-  blockquote p {
+  blockquote p,
+  figure > img {
     margin-bottom: 0;
   }
 }
