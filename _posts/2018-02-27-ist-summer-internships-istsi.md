@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IST Summer Internships (ISTSI) - an internship programme by and for students"
+title: "IST Summer Internships (ISTSI) - an Internship Programme by and for Students"
 description: ""
 thumb_image: "istsi/istsi.org.png"
 tags: [internships, student society]
