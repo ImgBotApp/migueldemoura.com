@@ -37,7 +37,7 @@ It was a very gratifying experience, however, and I couldn't be happier with the
    alt="Application growth by year." caption-no="3" caption="Application growth by year."
 %}
 
-This past year saw unprecedented growth on all indices, with the programme reaching between 5300 and 6500 IST students, 580 of those applying to at least one vacancy - a whopping YOY increase of 51%. The number of applications also jumped to 3577, again a massive YOY increase of 175%.
+This past year saw unprecedented growth on all indices, with the programme reaching between 5300 and 6500 IST students. Out of those, 938 logged in and 580 applied to at least one vacancy - a whopping YOY increase of 51%. The number of applications also jumped to 3577, again a massive YOY increase of 175%.
 
 {% include image.html path="istsi/companies.png"
    alt="Company growth by year." caption-no="4" caption="Company growth by year."
