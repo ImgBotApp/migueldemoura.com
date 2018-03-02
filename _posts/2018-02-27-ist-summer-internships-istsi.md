@@ -6,6 +6,8 @@ thumb_image: "istsi/istsi.org.png"
 tags: [internships, student society]
 ---
 
+**Update**: A full list of the minor changes since publishing can be seen [here](https://github.com/migueldemoura/migueldemoura.com/commits/master/_posts/2018-02-27-ist-summer-internships-istsi.md).
+
 One of the most common critiques regarding engineering courses is that they aren't "practical enough". Four years after starting my studies I can see some substance to that statement. The curriculum nails the theoretical foundations, but pragmatic applications to the taught concepts are, at times, still lacking. This appears not to be a mere student sentiment, given some feedback I've received from HR managers regarding below-average performance in certain soft skills like communication and proactivity by fresh out of college engineers. My faculty, [Instituto Superior Técnico (IST)](https://tecnico.ulisboa.pt), attempts to address this issue by fostering an environment where student groups can create opportunities to advance these skills.
 
 This setting allowed a fresh initiative to be born by some course-specific student societies in partnership with [TT@Técnico](https://tt.tecnico.ulisboa.pt) - the [IST Summer Internships](https://istsi.org), with the aim of filling this wildly perceived gap. With this programme, the students working at these societies would reach out to companies relevant to their field of study and attempt to compile a list of summer internship vacancies for their colleagues to apply.
