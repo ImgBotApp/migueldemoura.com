@@ -4,7 +4,7 @@
 
 $(function() {
     // Fluidbox
-    var fluidbox = $('.fluidbox');
+    var fluidbox = $('.fluidbox-trigger');
     fluidbox.fluidbox();
 
     $(document).on('keydown', function(e) {
