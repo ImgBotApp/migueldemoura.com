@@ -22,11 +22,10 @@ layout: default
         {{ content }}
     </div>
     <div class="article-share">
-        {% assign page_title = page.title | cgi_escape | truncate: 110 %} {% capture twitter-share-text %}{{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
-        <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+        <a href="https://twitter.com/intent/tweet/?text={{ page.title | cgi_escape }}&url={{ page.url | absolute_url }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="twitter" %}
         </a>
-        <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page_title }}&source={{ site.name }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="linkedin" %}
         </a>
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
