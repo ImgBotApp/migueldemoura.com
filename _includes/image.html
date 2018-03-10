@@ -1,12 +1,12 @@
-<figure>
+<figure{% if include.reduced %} class="reduced"{% endif%}>
     <a href="{% asset '{{ include.path }}' @path %}"
-        data-rjs="{% asset '{{ include.path }}' @path %}" class="fluidbox-trigger">
-            {% asset '{{ include.path }}'
-                srcset:width=610
-                srcset:width=440
-                srcset:width=200
-                alt='{{ include.alt }}'
-            %}
+       data-rjs="{% asset '{{ include.path }}' @path %}" class="fluidbox-trigger">
+        {% asset '{{ include.path }}'
+            srcset:width=610
+            srcset:width=440
+            srcset:width=200
+            alt='{{ include.alt }}'
+        %}
     </a>
     {% if include.caption %}
         <figcaption><strong>Figure {{ include.caption-no }} - </strong>{{ include.caption }}</figcaption>

@@ -89,6 +89,16 @@
   figure img {
     margin-bottom: 0;
   }
+  figure.reduced {
+    img {
+      max-width: 350px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    figcaption {
+      text-align: center;
+    }
+  }
 }
 
 .article-list-footer {
