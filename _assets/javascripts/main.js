@@ -12,8 +12,4 @@ $(function() {
             fluidbox.fluidbox('close');
         }
     });
-
-    $(window).scroll($.throttle(500, function() {
-        fluidbox.fluidbox('close');
-    }));
 });
