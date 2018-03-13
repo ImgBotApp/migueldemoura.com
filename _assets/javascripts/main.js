@@ -1,15 +1,3 @@
-//= require jquery
-//= require throttle-debounce-fn/dist/throttle-debounce-fn.js
-//= require fluidbox
+//= require zoom.js
 
-$(function() {
-    // Fluidbox
-    var fluidbox = $('.fluidbox-trigger');
-    fluidbox.fluidbox();
-
-    $(document).on('keydown', function(e) {
-        if (e.keyCode == 27) {
-            fluidbox.fluidbox('close');
-        }
-    });
-});
+new Zooming();

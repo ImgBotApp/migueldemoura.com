@@ -1,11 +1,13 @@
 <figure{% if include.reduced %} class="reduced"{% endif%}>
-    <a href="{% asset '{{ include.path }}' @path %}"
-       data-rjs="{% asset '{{ include.path }}' @path %}" class="fluidbox-trigger">
+    <a href="{% asset '{{ include.path }}' @path %}">
         {% if include.reduced %}
             {% asset '{{ include.path }}'
                 srcset:width=350
                 srcset:width=200
                 alt='{{ include.alt }}'
+                data-action='zoom'
+                data-zooming-width='{{ assets[include.path].width }}'
+                data-zooming-height='{{ assets[include.path].height }}'
             %}
         {% else %}
             {% asset '{{ include.path }}'
@@ -13,6 +15,9 @@
                 srcset:width=440
                 srcset:width=200
                 alt='{{ include.alt }}'
+                data-action='zoom'
+                data-zooming-width='{{ assets[include.path].width }}'
+                data-zooming-height='{{ assets[include.path].height }}'
             %}
         {% endif %}
     </a>
