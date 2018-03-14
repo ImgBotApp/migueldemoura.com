@@ -172,6 +172,9 @@ td:first-child {
   white-space: nowrap;
   padding-right: 10px;
   vertical-align: top;
+  @media (max-width: 405px) {
+    white-space: normal;
+  }
 }
 
 ::selection {
