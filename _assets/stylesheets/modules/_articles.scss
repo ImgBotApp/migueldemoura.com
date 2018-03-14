@@ -94,6 +94,9 @@
       max-width: 350px;
       margin-right: auto;
       margin-left: auto;
+      @media (max-width: 405px) {
+        max-width: 100%;
+      }
     }
     figcaption {
       text-align: center;
