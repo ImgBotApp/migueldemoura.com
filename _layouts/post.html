@@ -25,7 +25,7 @@ layout: default
         <a href="https://twitter.com/intent/tweet/?text={{ page.title | cgi_escape | url_encode }}&url={{ page.url | absolute_url }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="twitter" %}
         </a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title }}&source={{ site.name | cgi_escape | url_encode }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | cgi_escape | url_encode }}&source={{ site.name | cgi_escape | url_encode }}" title="Share on LinkedIn" rel="noreferrer noopener" target="_blank">
             {% include svg-icon.html icon="linkedin" %}
         </a>
         <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
