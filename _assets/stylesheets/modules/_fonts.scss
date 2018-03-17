@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: 'Cormorant Garamond';
+  font-display: swap;
   src: local('Cormorant Garamond Medium'),
        local('Cormorant-Garamond-600'),
        url(font_path('cormorant-garamond/700.woff2')) format('woff2'),
        url(font_path('cormorant-garamond/700.woff')) format('woff');
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -22,21 +22,11 @@
 
 @font-face {
   font-family: 'Lato';
-  src: local('Lato Light'),
-       local('Lato-300'),
-       url(font_path('lato/300.woff2')) format('woff2'),
-       url(font_path('lato/300.woff')) format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato';
   src: local('Lato Regular'),
        local('Lato-regular'),
        url(font_path('lato/regular.woff2')) format('woff2'),
        url(font_path('lato/regular.woff')) format('woff');
-  font-weight: 400;
+  font-weight: $base-font-weight;
   font-style: normal;
 }
 
@@ -46,6 +36,6 @@
        local('Lato-700'),
        url(font_path('lato/700.woff2')) format('woff2'),
        url(font_path('lato/700.woff')) format('woff');
-  font-weight: 700;
+  font-weight: $base-font-weight-bold;
   font-style: normal;
 }

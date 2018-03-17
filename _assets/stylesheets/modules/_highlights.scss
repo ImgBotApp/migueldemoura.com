@@ -8,7 +8,7 @@
   margin: 30px 0;
   overflow: auto;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $base-font-weight;
   background: lighten($gray-lightest, 6);
   border-radius: $base-border-radius;
   pre {
@@ -47,13 +47,13 @@
 // Keyword
 
 .highlight .k {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Operator
 
 .highlight .o {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Comment.Multiline
@@ -66,7 +66,7 @@
 // Comment.Single
 
 .highlight .cp {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #999;
 }
 
@@ -81,7 +81,7 @@
 
 .highlight .cs {
   font-style: italic;
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #999;
 }
 
@@ -146,7 +146,7 @@
 // Generic.Strong
 
 .highlight .gs {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Generic.Subheading
@@ -164,31 +164,31 @@
 // Keyword.Constant
 
 .highlight .kc {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Keyword.Declaration
 
 .highlight .kd {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Keyword.Pseudo
 
 .highlight .kp {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Keyword.Reserved
 
 .highlight .kr {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Keyword.Type
 
 .highlight .kt {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #458;
 }
 
@@ -219,7 +219,7 @@
 // Name.Class
 
 .highlight .nc {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #458;
 }
 
@@ -238,14 +238,14 @@
 // Name.Exception
 
 .highlight .ne {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #900;
 }
 
 // Name.Function
 
 .highlight .nf {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
   color: #900;
 }
 
@@ -270,7 +270,7 @@
 // Operator.Word
 
 .highlight .ow {
-  font-weight: bold;
+  font-weight: $base-font-weight-bold;
 }
 
 // Text.Whitespace
