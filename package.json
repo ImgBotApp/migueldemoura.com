@@ -6,8 +6,8 @@
     "normalize-scss": "^7.0.1"
   },
   "devDependencies": {
-    "stylelint": "^8.4.0",
-    "stylelint-scss": "^2.3.0",
-    "stylelint-config-recommended": "^2.0.1"
+    "stylelint": "^9.1.3",
+    "stylelint-scss": "^2.5.0",
+    "stylelint-config-recommended": "^2.1.0"
   }
 }
