@@ -2,8 +2,9 @@
     <a href="{% asset '{{ include.path }}' @path %}">
         {% if include.reduced %}
             {% asset '{{ include.path }}'
-                srcset:width=350
                 srcset:width=200
+                srcset:width=350
+                sizes='(max-width: 240px) 200px, 350px'
                 alt='{{ include.alt }}'
                 data-action='zoom'
                 data-zooming-width='{{ assets[include.path].width }}'
@@ -11,9 +12,10 @@
             %}
         {% else %}
             {% asset '{{ include.path }}'
-                srcset:width=610
-                srcset:width=440
                 srcset:width=200
+                srcset:width=440
+                srcset:width=610
+                sizes='(max-width: 240px) 200px, (max-width: 480px) 440px, 610px'
                 alt='{{ include.alt }}'
                 data-action='zoom'
                 data-zooming-width='{{ assets[include.path].width }}'
