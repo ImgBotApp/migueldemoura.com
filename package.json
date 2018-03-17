@@ -3,7 +3,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "turbolinks": "^5.1.1"
   },
   "devDependencies": {
     "stylelint": "^9.1.3",

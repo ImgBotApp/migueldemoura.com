@@ -50,6 +50,6 @@ webrick:
     X-Content-Type-Options: "nosniff"
     X-Frame-Options: "DENY"
     X-XSS-Protection: "1; mode=block"
-    Content-Security-Policy: "default-src 'self'; connect-src 'none'; frame-src 'none'; manifest-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self'"
+    Content-Security-Policy: "default-src 'self'; frame-src 'none'; manifest-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; frame-ancestors 'none'; form-action 'none'; block-all-mixed-content; base-uri 'self';"
     Referrer-Policy: "no-referrer"
     Expect-CT: "enforce"
