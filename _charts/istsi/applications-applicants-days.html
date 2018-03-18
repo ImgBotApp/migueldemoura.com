@@ -1,0 +1,38 @@
+<body>
+    <script src="../../node_modules/chart.js/dist/Chart.js"></script>
+    <canvas id="canvas"></canvas>
+    <script>
+        var color = Chart.helpers.color;
+        new Chart(document.getElementById('canvas').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['17', '18', '19', '20', '21', '22 (W)', '23 (W)',
+                         '24', '25 (H)', '26', '27', '28', '29 (W)', '30 (W)', '1'],
+                datasets: [
+                    {
+                        label: 'Applicants',
+                        data: [12, 6, 8, 9, 12, 15, 16, 10, 16, 20, 25, 45, 102, 382, 41],
+                        backgroundColor: color('rgb(40,53,147)').alpha(0.5).rgbString(),
+                        borderColor: 'rgb(40,53,147)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Applications',
+                        data: [45, 17, 19, 45, 44, 80, 85, 38, 49, 72, 80, 192, 518, 2154, 139],
+                        backgroundColor: color('rgb(198,40,40)').alpha(0.5).rgbString(),
+                        borderColor: 'rgb(198,40,40)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                legend: {position: 'top'},
+                title: {display: true, text: 'Applications and Applicants - April/May 2017'},
+                scales: {
+                    xAxes: [{gridLines: {display:false}}],
+                    yAxes: [{gridLines: {display:false}, ticks: {beginAtZero: true}}]
+                }
+            }
+        });
+    </script>
+</body>

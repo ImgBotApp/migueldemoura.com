@@ -1,0 +1,53 @@
+<body>
+    <script src="../../node_modules/chart.js/dist/Chart.js"></script>
+    <canvas id="canvas0"></canvas>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <script>
+        var color = Chart.helpers.color;
+        var optionsBase = {
+            legend: {position: 'top'},
+            title: {display: true, text: 'NEECIST'},
+            scales: {
+                xAxes: [{gridLines: {display:false}}],
+                yAxes: [{gridLines: {display:false}, ticks: {beginAtZero: true}}]
+            }
+        };
+        var dataBase = {
+            datasets: [{
+                label: '2015',
+                backgroundColor: color('rgb(1, 191, 194)').alpha(0.5).rgbString(),
+                borderColor: 'rgb(1, 191, 194)',
+                borderWidth: 1
+            }, {
+                label: '2016',
+                backgroundColor: color('rgb(0, 157, 224)').alpha(0.5).rgbString(),
+                borderColor: 'rgb(0, 157, 224)',
+                borderWidth: 1
+            }, {
+                label: '2017',
+                backgroundColor: color('rgb(88, 86, 214)').alpha(0.5).rgbString(),
+                borderColor: 'rgb(88, 86, 214)',
+                borderWidth: 1
+            }]
+        };
+
+        var data = [], chart = [], options = [];
+        var values = [
+            [[68], [71], [111], 'Companies'],
+            [[324], [381], [580], 'Applicants'],
+            [[967], [1254], [3577], 'Applications']
+        ]
+        for (var i = 0; i < 3; i++) {
+            data[i] = JSON.parse(JSON.stringify(dataBase));
+            data[i].datasets[0].data = values[i][0];
+            data[i].datasets[1].data = values[i][1];
+            data[i].datasets[2].data = values[i][2];
+            options[i] = JSON.parse(JSON.stringify(optionsBase));
+            options[i].title.text = values[i][3];
+            new Chart(document.getElementById('canvas' + i).getContext('2d'), {
+                data: data[i], type: 'bar', options: options[i]
+            });
+        }
+    </script>
+</body>
