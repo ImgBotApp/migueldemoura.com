@@ -13,7 +13,7 @@ layout: default
             <span class="article-list-divider">-</span>
             <div class="article-list-tags">
                 {% for tag in page.tags %}
-                <a href="{{ 'tag/' | relative_url }}{{ tag | cgi_escape | url_encode }}">{{ tag | capitalize }}</a>
+                    <a href="{{ 'tag/' | relative_url }}{{ tag | replace: ' ', '-' | cgi_escape | url_encode }}">{{ tag | capitalize }}</a>
                 {% endfor %}
             </div>
         </div>

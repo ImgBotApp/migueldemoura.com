@@ -2,9 +2,10 @@
 layout: default
 ---
 
-{% if site.tags[page.slug] %}
+{% assign slug = page.slug | replace: '-', ' ' %}
+{% if site.tags[slug] %}
     <ul class="article-list">
-        {% for post in site.tags[page.slug] %}
+        {% for post in site.tags[slug] %}
             <li class="article-list-item">
                 <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
                     <h5>{{ post.title }}</h5>
