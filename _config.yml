@@ -33,11 +33,11 @@ defaults:
 include:
   - _headers
 exclude:
-  - bin/
   - Gemfile
   - Gemfile.lock
   - LICENSE-CC-BY-SA-4.0.md
   - LICENSE-MIT.md
+  - Makefile
   - node_modules/
   - package-lock.json
   - package.json
