@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.6'
 
-gem 'autoprefixer-rails', '>= 8.1.0.1'
+gem 'autoprefixer-rails', '>= 8.2.0'
 gem 'image_optim', '>= 0.26.1'
 gem 'jekyll', '>= 3.7.3'
 gem 'mini_magick', '>= 4.8.0'
